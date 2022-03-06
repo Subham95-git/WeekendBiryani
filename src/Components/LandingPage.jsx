@@ -1,13 +1,15 @@
 import React from "react";
 import "./style/LandingPage.css";
 import Navigation from "./Navigation";
-import { Accordion, Row, Card, Button, Col } from "react-bootstrap";
+import { Accordion, Row, Card, Button, Col, Badge  } from "react-bootstrap";
 import { BsCart2 } from "react-icons/bs";
 import { MdRestaurantMenu } from "react-icons/md";
 import { GiRotaryPhone, GiPhone } from "react-icons/gi";
 
-import sayan from '../Resources/sayan.jpeg';
-import gautam from '../Resources/gautam.jpeg'
+import sayan from "../Resources/sayan.jpeg";
+import gautam from "../Resources/gautam.jpeg";
+import ashoke from "../Resources/ashoke.jpeg";
+import satadol from "../Resources/satadol.jpeg"
 
 export default function LandingPage() {
   return (
@@ -31,7 +33,10 @@ export default function LandingPage() {
         <div>
           <Accordion>
             <Accordion.Item eventKey="0">
-              <Accordion.Header><MdRestaurantMenu/>&nbsp;Menu</Accordion.Header>
+              <Accordion.Header>
+                <MdRestaurantMenu />
+                &nbsp;Menu
+              </Accordion.Header>
               <Accordion.Body>
                 <Row>
                   <Card>
@@ -46,15 +51,21 @@ export default function LandingPage() {
                       </Card.Subtitle>
                       <Card.Text></Card.Text>
 
-                      <Card.Link className="button">
-                        <Button variant="warning">
-                          <BsCart2 /> &nbsp;Order Now
-                        </Button>
-                      </Card.Link>
+                      <Row>
+                        
+                        <Col>
+                          <Card.Link className="button">
+                            <Button variant="warning">
+                              <BsCart2 /> &nbsp;Order
+                            </Button>
+                          </Card.Link>
+                        </Col>
+                        <Col><Badge bg="secondary">Price: {"\u20B9"} 90</Badge></Col>
+                      </Row>
                     </Card.Body>
                   </Card>
                 </Row>
-                <br/>
+                <br />
                 <Row>
                   <Card>
                     <Card.Img
@@ -67,55 +78,87 @@ export default function LandingPage() {
                         Half Plate
                       </Card.Subtitle>
                       <Card.Text></Card.Text>
-
-                      <Card.Link className="button">
-                        <Button variant="warning">
-                          <BsCart2 /> &nbsp;Order Now
-                        </Button>
-                      </Card.Link>
+                      <Row>
+                        
+                        <Col>
+                          <Card.Link className="button">
+                            <Button variant="warning">
+                              <BsCart2 /> &nbsp;Order
+                            </Button>
+                          </Card.Link>
+                        </Col>
+                        <Col><Badge bg="secondary">Price: {"\u20B9"} 50</Badge></Col>
+                      </Row>
                     </Card.Body>
                   </Card>
                 </Row>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header><GiRotaryPhone/>&nbsp;Contact us</Accordion.Header>
+              <Accordion.Header>
+                <GiRotaryPhone />
+                &nbsp;Contact us
+              </Accordion.Header>
               <Accordion.Body>
-              <Row>
-                <Col>
-                <Card border="info">
-                <Card.Body>
-                <Card.Img variant="top" src={sayan} />
+                <Row>
+                  <Col>
+                    <Card border="info">
+                      <Card.Body>
+                        <Card.Img variant="top" src={sayan} />
+                        <br />
+                        <Card.Title>সায়ন বৈরাগ্য</Card.Title>
+                        <Card.Text>
+                          <GiPhone /> &nbsp; 9614278503 <br/>
+                          <GiPhone /> &nbsp; 6296803703
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <br />
+                  <Col>
+                    <Card border="info">
+                      <Card.Body>
+                        <Card.Img variant="top" src={gautam} />
+                        <br />
+                        <Card.Title>গৌতম চক্রবর্তী</Card.Title>
+                        <Card.Text>
+                        <GiPhone /> &nbsp; 8388075911 <br/>
+                          <GiPhone /> &nbsp; 8436594584
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </Row>
                 <br/>
-                      <Card.Title >
-                      সায়ন বৈরাগ্য
-                      </Card.Title>
-                      <Card.Text>
-                        <GiPhone/> &nbsp; +91 9614278503
-                      </Card.Text>
-
-                      
-                    </Card.Body>
-                </Card>
-                </Col>
-                <br/>
-                <Col>
-                <Card border="info">
-                <Card.Body>
-                <Card.Img variant="top" src={gautam} />
-                <br/>
-                      <Card.Title >
-                      গৌতম চক্রবর্তী
-                      </Card.Title>
-                      <Card.Text>
-                        <GiPhone/> &nbsp; +91 8388075911
-                      </Card.Text>
-
-                      
-                    </Card.Body>
-                </Card>
-                </Col>
-              </Row>
+                <Row>
+                  <Col>
+                    <Card border="info">
+                      <Card.Body>
+                        <Card.Img variant="top" src={ashoke} />
+                        <br />
+                        <Card.Title>অশোক চক্রবর্তী</Card.Title>
+                        <Card.Text>
+                          <GiPhone /> &nbsp; 9474531892 <br/>
+                          <GiPhone /> &nbsp; 6295857432
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <br />
+                  <Col>
+                    <Card border="info">
+                      <Card.Body>
+                        <Card.Img variant="top" src={satadol} />
+                        <br />
+                        <Card.Title>শতদল দত্ত</Card.Title>
+                        <Card.Text>
+                        <GiPhone /> &nbsp; 7872444837 <br/>
+                          <GiPhone /> &nbsp; 6294114387
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </Row>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
