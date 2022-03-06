@@ -1,10 +1,13 @@
 import React from "react";
 import "./style/LandingPage.css";
 import Navigation from "./Navigation";
-import { Accordion, Row, Card, Button } from "react-bootstrap";
+import { Accordion, Row, Card, Button, Col } from "react-bootstrap";
 import { BsCart2 } from "react-icons/bs";
 import { MdRestaurantMenu } from "react-icons/md";
-import { GiRotaryPhone } from "react-icons/gi";
+import { GiRotaryPhone, GiPhone } from "react-icons/gi";
+
+import sayan from '../Resources/sayan.jpeg';
+import gautam from '../Resources/gautam.jpeg'
 
 export default function LandingPage() {
   return (
@@ -51,6 +54,7 @@ export default function LandingPage() {
                     </Card.Body>
                   </Card>
                 </Row>
+                <br/>
                 <Row>
                   <Card>
                     <Card.Img
@@ -77,13 +81,41 @@ export default function LandingPage() {
             <Accordion.Item eventKey="1">
               <Accordion.Header><GiRotaryPhone/>&nbsp;Contact us</Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <Row>
+                <Col>
+                <Card border="info">
+                <Card.Body>
+                <Card.Img variant="top" src={sayan} />
+                <br/>
+                      <Card.Title >
+                      সায়ন বৈরাগ্য
+                      </Card.Title>
+                      <Card.Text>
+                        <GiPhone/> &nbsp; +91 9614278503
+                      </Card.Text>
+
+                      
+                    </Card.Body>
+                </Card>
+                </Col>
+                <br/>
+                <Col>
+                <Card border="info">
+                <Card.Body>
+                <Card.Img variant="top" src={gautam} />
+                <br/>
+                      <Card.Title >
+                      গৌতম চক্রবর্তী
+                      </Card.Title>
+                      <Card.Text>
+                        <GiPhone/> &nbsp; +91 8388075911
+                      </Card.Text>
+
+                      
+                    </Card.Body>
+                </Card>
+                </Col>
+              </Row>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
