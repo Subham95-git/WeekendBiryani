@@ -1,0 +1,62 @@
+@media screen and (min-width: 601px) {
+
+.bodystyle{
+    background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/h6k3-hero.jpg");
+    height:100vh;
+        margin-top : -70px;
+        font-size:50px ;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+ h4{
+    text-align:center;
+    align-self: center;
+     width:90%;
+     top: 50%;
+       left: 50%;
+       padding: 15px;
+     background-color: rgba(0, 0, 0, 0.466);
+     color: rgb(165, 182, 69);
+}
+
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .bodystyle{
+        background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/h6k3-hero.jpg");
+        height:80vh;
+            margin-top : -70px;
+            font-size:50px ;
+            background-size: cover;
+            background-repeat: no-repeat;
+    }
+
+     h4{
+        
+      /* bring your own prefixes */
+     text-align:center;
+     align-self: center;
+      width:90%;
+      top: 50%;
+        left: 50%;
+        padding: 15px;
+      background-color: rgba(0, 0, 0, 0.466);
+      color: rgb(165, 182, 69);
+    }
+
+   
+
+    .button{
+        font-weight: bold;
+    }
+
+    .accordion-button {
+        font-weight: 900 !important;
+        color: rgba(5, 66, 116, 0.842) !important;
+    }
+}
