@@ -6,14 +6,20 @@ import { BsCart2 } from "react-icons/bs";
 import { MdRestaurantMenu } from "react-icons/md";
 import { GiRotaryPhone, GiPhone } from "react-icons/gi";
 
+import {  Link } from 'react-router-dom';
+
 import sayan from "../Resources/sayan.jpeg";
 import gautam from "../Resources/gautam.jpeg";
 import ashoke from "../Resources/ashoke.jpeg";
 import satadol from "../Resources/satadol.jpeg"
 
 export default function LandingPage() {
+
+    
+
   return (
     <>
+    
       <Row>
         <div className="bodystyle">
           <Navigation />
@@ -55,9 +61,11 @@ export default function LandingPage() {
                         
                         <Col>
                           <Card.Link className="button">
+                          <Link to='/order'>
                             <Button variant="warning">
                               <BsCart2 /> &nbsp;Order
                             </Button>
+                            </Link>
                           </Card.Link>
                         </Col>
                         <Col><Badge bg="secondary">Price: {"\u20B9"} 90</Badge></Col>
@@ -82,9 +90,11 @@ export default function LandingPage() {
                         
                         <Col>
                           <Card.Link className="button">
-                            <Button variant="warning">
+                          <Link to='/order'>
+                            <Button variant="warning" >
                               <BsCart2 /> &nbsp;Order
                             </Button>
+                            </Link>
                           </Card.Link>
                         </Col>
                         <Col><Badge bg="secondary">Price: {"\u20B9"} 50</Badge></Col>
@@ -164,6 +174,9 @@ export default function LandingPage() {
           </Accordion>
         </div>
       </Row>
+      
+      
+      
     </>
   );
 }

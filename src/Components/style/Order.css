@@ -1,0 +1,36 @@
+@media screen and (min-width: 601px) {
+
+.formContainer{
+    /* position: fixed; */
+    width: 100%;
+    padding: 3%;
+    background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/h6k3-hero.jpg") !important;
+    /* background-color: rgba(99, 90, 90, 0.514); */
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .formContainer{
+        position: inherit !important;
+        width: 100%;
+        padding: 3%;
+        
+        background-image: url("https://thumbs.dreamstime.com/b/indian-food-thali-style-meal-chicken-meat-masala-tea-chai-wooden-table-138439693.jpg") !important;
+        color: #fff !important;
+        text-shadow: 0 0 12px rgb(2, 2, 2);
+        font-weight:bolder;
+        height:100vh;
+        
+        
+        /* background-color: rgba(191, 234, 245, 0.973); */
+    }
+
+    /* .badge {
+        width: 15%;
+        font-weight: bold !important;
+    } */
+
+    
+}
