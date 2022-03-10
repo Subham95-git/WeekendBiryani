@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar,Nav, Container} from 'react-bootstrap'
 import './style/Navigation.css'
+import {  Link } from 'react-router-dom';
 
 export default function Navigation() {
     return (
@@ -16,7 +17,7 @@ export default function Navigation() {
     </Nav>
     <Nav >
     
-      <Nav.Link className="navitem">Order</Nav.Link>
+    <Link to='/order' className="navitem">Order</Link>
       <Nav.Link className="navitem">Menu</Nav.Link>
     </Nav>
     </Navbar.Collapse>
