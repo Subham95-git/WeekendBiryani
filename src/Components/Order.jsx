@@ -47,7 +47,7 @@ export default function Order() {
 
   let buttonclickhandler = (e)=>{
     console.log(name+" "+mobile+" "+area+" "+plate);
-    const url = "http://localhost:8080/v1/saveorder?name="+name+"&mobile="+mobile+"&village="+area+"&menu=Biryani&plate="+plate;
+    const url = "http://weekendbiryani-env.eba-7kt2st9m.us-east-2.elasticbeanstalk.com/v1/saveorder?name="+name+"&mobile="+mobile+"&village="+area+"&menu=Biryani&plate="+plate;
 
     console.log(url);
     axios.post(url)
@@ -87,11 +87,11 @@ export default function Order() {
           <Form.Select aria-label="Default select example" onClick={areachangehandler}>
   <option>Select Area</option>
   <option value="chb">Chanak-Bamunpara</option>
-  <option value="chs">Chanak-Sakrapara</option>
-  <option value="chkk">Cahank-Kachari-Kestopur</option>
-  <option value="chmm">Cahank-Matalsal-Mathgobindopur</option>
-  <option value="jys">Jaypur-Salanda</option>
-  <option value="ksg">Kasemnagar-Gatista</option>
+  <option value="chs">Chanak-Shakrapara</option>
+  <option value="chkk">Chanak-Kachari-Kestopur</option>
+  <option value="chmm">Chanak-Matalshal-Mathgobindapur</option>
+  <option value="jys">Jaypur-Salonda</option>
+  <option value="ksg">Kashemnagar-Gatista</option>
   <option value="pl">Paligram</option>
 </Form.Select>
         </Form.Group>

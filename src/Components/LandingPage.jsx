@@ -48,12 +48,12 @@ export default function LandingPage() {
                   <Card>
                     <Card.Img
                       variant="top"
-                      src="https://media.istockphoto.com/photos/fish-biryani-with-basmati-rice-indian-food-picture-id488481490?k=20&m=488481490&s=612x612&w=0&h=HYP2KxiC1e2tAtzmfrA7xxs3u8LD1wjSLPUD9bZ48eU="
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeQa36-XZ5YVffaYGZ4iGYqNDg2xyV4e-lIQ&usqp=CAU"
                     />
                     <Card.Body>
-                      <Card.Title>Chicken Biryani</Card.Title>
+                      <Card.Title>Naan Paratha</Card.Title>
                       <Card.Subtitle className="mb-2 text-muted">
-                        Full Plate
+                        Piece
                       </Card.Subtitle>
                       <Card.Text></Card.Text>
 
@@ -68,7 +68,7 @@ export default function LandingPage() {
                             </Link>
                           </Card.Link>
                         </Col>
-                        <Col><Badge bg="secondary">Price: {"\u20B9"} 90</Badge></Col>
+                        <Col><Badge bg="secondary">Price: {"\u20B9"} 8</Badge></Col>
                       </Row>
                     </Card.Body>
                   </Card>
@@ -78,12 +78,12 @@ export default function LandingPage() {
                   <Card>
                     <Card.Img
                       variant="top"
-                      src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-510078,msid-67438684/food-eat-biryani-gettyimage.jpg"
+                      src="https://graphicrecipes.com/wp-content/uploads/2021/03/111-2-1024x630.jpg"
                     />
                     <Card.Body>
-                      <Card.Title>Chicken Biryani</Card.Title>
+                      <Card.Title>Chilly Chicken</Card.Title>
                       <Card.Subtitle className="mb-2 text-muted">
-                        Half Plate
+                        Piece
                       </Card.Subtitle>
                       <Card.Text></Card.Text>
                       <Row>
@@ -97,7 +97,7 @@ export default function LandingPage() {
                             </Link>
                           </Card.Link>
                         </Col>
-                        <Col><Badge bg="secondary">Price: {"\u20B9"} 50</Badge></Col>
+                        <Col><Badge bg="secondary">Price: {"\u20B9"} 15</Badge></Col>
                       </Row>
                     </Card.Body>
                   </Card>
